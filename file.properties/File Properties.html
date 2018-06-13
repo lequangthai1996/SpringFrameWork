@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<!-- saved from url=(0041)https://kipalog.com/posts/File-Properties -->
+<html ng-app="app" class="ng-scope"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}</style>
+    <!-- Standard Meta -->
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+      <meta name="description" content="Vấn đề  Khi làm việc với CSDL hay networks.. . có những thông số thường xuyên thay đổi như tên CSDL, cổng, tài khoản, người dùng, mật khẩu.. .Nếu n...">
+  <meta property="og:title" content="File Properties">
+  <meta property="og:site_name" content="kipalog.com">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="http://kipalog.com/posts/File-Properties">
+  <meta property="og:description" content="Vấn đề  Khi làm việc với CSDL hay networks.. . có những thông số thường xuyên thay đổi như tên CSDL, cổng, tài khoản, người dùng, mật khẩu.. .Nếu n...">
+    <meta property="og:image" content="http://kipalog.com/assets/common/fb-53bba35cb97e5babf7f8db7ab3003cf4.png">
+
+    <!-- Site Properities -->
+    <title>
+        File Properties
+
+    </title>
+    <link data-turbolinks-track="true" href="./File Properties_files/application-5760f1ecfa283a3d994b4a09b37eaf19.css" media="all" rel="stylesheet">
+      <link href="./File Properties_files/github_customized-5e17bfbdae4ba492e174f8baef4df351.css" media="screen" rel="stylesheet">
+  <link href="./File Properties_files/jquery.atwho-bd1caff784d2dfb6114edf35a2b0c23e.css" media="screen" rel="stylesheet">
+  <link href="./File Properties_files/post-97b66ebb275b22351558e143407ed8b7.css" media="screen" rel="stylesheet">
+  <link href="./File Properties_files/gist-20773397d4229354363019fff7d7136b.css" media="screen" rel="stylesheet">
+  <link href="./File Properties_files/minEmoji-47f1416033908780698c228de5f46003.css" media="screen" rel="stylesheet">
+  <link href="./File Properties_files/fluidbox.min-dd3681a5f90448ee3a0c1127d98dff81.css" media="screen" rel="stylesheet">
+
+    <script id="facebook-jssdk" src="./File Properties_files/sdk.js.download"></script><script async="" src="./File Properties_files/analytics.js.download"></script><script data-turbolinks-track="true" src="./File Properties_files/application-2cc9d020b184ed31c75f863577851868.js.download"></script>
+      <script src="./File Properties_files/highlight.pack-6e3d2c639ec8ff13c56974099f30a287.js.download"></script>
+  <script src="./File Properties_files/marked-a97f19abde47750ea06631107c4b32fb.js.download"></script>
+  <script src="./File Properties_files/jquery.autosize.min-c49105f226808aac480d152f7dd593fb.js.download"></script>
+  <script src="./File Properties_files/jquery.caret-b8918a2d362ea65fbcc29409063bea87.js.download"></script>
+  <script src="./File Properties_files/jquery.atwho-dba1a80c5c1726a33dc28a0c46c3d26d.js.download"></script>
+  <script src="./File Properties_files/toc-7621f925ac370c37cba0a47d3cf46ebd.js.download"></script>
+  <script src="./File Properties_files/jMinEmoji-5dba82960b7082242ab55003fd188ead.js.download"></script>
+  <script src="./File Properties_files/jquery.ba-throttle-debounce.min-dda6fa674e28035b2e200a437e94c9a1.js.download"></script>
+  <script src="./File Properties_files/jquery.fluidbox.min-f572f96df0ca78ebd08880faa510b199.js.download"></script>
+
+    <link href="https://kipalog.com/assets/common/icon/favicon-70fe7f7a773df88ce80fc2506239715f.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+
+    <!-- GA -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-53121223-2', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    <!-- GA -->
+  <style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+.MathJax_Menu_Button .MathJax_Hover_Arrow {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px; font-family: 'Courier New',Courier; font-size: 9px; color: #F0F0F0}
+.MathJax_Menu_Button .MathJax_Hover_Arrow span {display: block; background-color: #AAA; border: 1px solid; border-radius: 3px; line-height: 0; padding: 4px}
+.MathJax_Hover_Arrow:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_Hover_Arrow:hover span {background-color: #CCC!important}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_About.MathJax_MousePost {outline: none}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 2px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 2px 2em; background: transparent}
+.MathJax_MenuArrow {position: absolute; right: .5em; padding-top: .25em; color: #666666; font-size: .75em}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuArrow.RTL {left: .5em; right: auto}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuRadioCheck {position: absolute; left: 1em}
+.MathJax_MenuRadioCheck.RTL {right: 1em; left: auto}
+.MathJax_MenuLabel {padding: 2px 2em 4px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #CCCCCC; margin: 4px 1px 0px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: Highlight; color: HighlightText}
+.MathJax_MenuDisabled:focus, .MathJax_MenuLabel:focus {background-color: #E8E8E8}
+.MathJax_ContextMenu:focus {outline: none}
+.MathJax_ContextMenu .MathJax_MenuItem:focus {outline: none}
+#MathJax_AboutClose {top: .2em; right: .2em}
+.MathJax_Menu .MathJax_MenuClose {top: -10px; left: -10px}
+.MathJax_MenuClose {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; font-family: 'Courier New',Courier; font-size: 24px; color: #F0F0F0}
+.MathJax_MenuClose span {display: block; background-color: #AAA; border: 1.5px solid; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; line-height: 0; padding: 8px 0 6px}
+.MathJax_MenuClose:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_MenuClose:hover span {background-color: #CCC!important}
+.MathJax_MenuClose:hover:focus {outline: none}
+</style><style type="text/css">.MathJax_Preview .MJXf-math {color: inherit!important}
+</style><style type="text/css">.MJX_Assistive_MathML {position: absolute!important; top: 0; left: 0; clip: rect(1px, 1px, 1px, 1px); padding: 1px 0 0 0!important; border: 0!important; height: 1px!important; width: 1px!important; overflow: hidden!important; display: block!important; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none}
+.MJX_Assistive_MathML.MJX_Assistive_MathML_Block {width: 100%!important}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style><style type="text/css">.MathJax_Preview {color: #888}
+#MathJax_Message {position: fixed; left: 1em; bottom: 1.5em; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style><style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}.fb_link img{border:none}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_reset .fb_dialog_legacy{overflow:visible}.fb_dialog_advanced{padding:10px;border-radius:8px}.fb_dialog_content{background:#fff;color:#333}.fb_dialog_close_icon{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{top:5px;left:5px;right:auto}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent}.fb_dialog_close_icon:active{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent}.fb_dialog_loader{background-color:#f6f7f9;border:1px solid #606060;font-size:24px;padding:20px}.fb_dialog_top_left,.fb_dialog_top_right,.fb_dialog_bottom_left,.fb_dialog_bottom_right{height:10px;width:10px;overflow:hidden;position:absolute}.fb_dialog_top_left{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 0;left:-10px;top:-10px}.fb_dialog_top_right{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -10px;right:-10px;top:-10px}.fb_dialog_bottom_left{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -20px;bottom:-10px;left:-10px}.fb_dialog_bottom_right{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -30px;right:-10px;bottom:-10px}.fb_dialog_vert_left,.fb_dialog_vert_right,.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{position:absolute;background:#525252;filter:alpha(opacity=70);opacity:.7}.fb_dialog_vert_left,.fb_dialog_vert_right{width:10px;height:100%}.fb_dialog_vert_left{margin-left:-10px}.fb_dialog_vert_right{right:0;margin-right:-10px}.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{width:100%;height:10px}.fb_dialog_horiz_top{margin-top:-10px}.fb_dialog_horiz_bottom{bottom:0;margin-bottom:-10px}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{-webkit-transform:none;height:100%;margin:0;overflow:visible;position:absolute;top:-10000px;left:0;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{width:auto;height:auto;min-height:initial;min-width:initial;background:none}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{color:#fff;display:block;padding-top:20px;clear:both;font-size:18px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .45);position:absolute;bottom:0;left:0;right:0;top:0;width:100%;min-height:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_content .dialog_header{-webkit-box-shadow:white 0 1px 1px -1px inset;background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#738ABA), to(#2C4987));border-bottom:1px solid;border-color:#1d4088;color:#fff;font:14px Helvetica, sans-serif;font-weight:bold;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{-webkit-font-smoothing:subpixel-antialiased;height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#4966A6), color-stop(.5, #355492), to(#2A4887));border:1px solid #29487d;-webkit-background-clip:padding-box;-webkit-border-radius:3px;-webkit-box-shadow:rgba(0, 0, 0, .117188) 0 1px 1px inset, rgba(255, 255, 255, .167969) 0 1px 0;display:inline-block;margin-top:3px;max-width:85px;line-height:18px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{border:none;background:none;color:#fff;font:12px Helvetica, sans-serif;font-weight:bold;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #555;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f6f7f9;border:1px solid #555;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);background-repeat:no-repeat;background-position:50% 50%;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_hide_iframes iframe{position:relative;left:-10000px}.fb_iframe_widget_loader{position:relative;display:inline-block}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}.fb_iframe_widget_loader iframe{min-height:32px;z-index:2;zoom:1}.fb_iframe_widget_loader .FB_Loader{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat;height:32px;width:32px;margin-left:-16px;position:absolute;left:50%;z-index:4}
+.fb_customer_chat_bounce_in{animation-duration:250ms;animation-name:fb_bounce_in}.fb_customer_chat_bounce_out{animation-duration:250ms;animation-name:fb_fade_out}.fb_customer_chat_bubble_pop_in{animation-duration:250ms;animation-name:fb_customer_chat_bubble_bounce_in_animation}.fb_customer_chat_bubble_animated_no_badge{box-shadow:0 3px 12px rgba(0, 0, 0, .15);transition:box-shadow 150ms linear}.fb_customer_chat_bubble_animated_no_badge:hover{box-shadow:0 5px 24px rgba(0, 0, 0, .3)}.fb_customer_chat_bubble_animated_with_badge{box-shadow:-5px 4px 14px rgba(0, 0, 0, .15);transition:box-shadow 150ms linear}.fb_customer_chat_bubble_animated_with_badge:hover{box-shadow:-5px 8px 24px rgba(0, 0, 0, .2)}.fb_invisible_flow{display:inherit;height:0;overflow-x:hidden;width:0}.fb_mobile_overlay_active{background-color:#fff;height:100%;overflow:hidden;position:fixed;visibility:hidden;width:100%}@keyframes fb_fade_out{from{opacity:1}to{opacity:0}}@keyframes fb_bounce_in{0%{opacity:0;transform:scale(.8, .8);transform-origin:100% 100%}10%{opacity:.1}20%{opacity:.2}30%{opacity:.3}40%{opacity:.4}50%{opacity:.5}60%{opacity:.6}70%{opacity:.7}80%{opacity:.8;transform:scale(1.03, 1.03)}90{opacity:.9}100%{opacity:1;transform:scale(1, 1)}}@keyframes fb_customer_chat_bubble_bounce_in_animation{0%{bottom:6pt;opacity:0;transform:scale(0, 0);transform-origin:center}70%{bottom:18pt;opacity:1;transform:scale(1.2, 1.2)}100%{transform:scale(1, 1)}}</style><style type="text/css">.MJXp-script {font-size: .8em}
+.MJXp-right {-webkit-transform-origin: right; -moz-transform-origin: right; -ms-transform-origin: right; -o-transform-origin: right; transform-origin: right}
+.MJXp-bold {font-weight: bold}
+.MJXp-italic {font-style: italic}
+.MJXp-scr {font-family: MathJax_Script,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-frak {font-family: MathJax_Fraktur,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-sf {font-family: MathJax_SansSerif,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-cal {font-family: MathJax_Caligraphic,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-mono {font-family: MathJax_Typewriter,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-largeop {font-size: 150%}
+.MJXp-largeop.MJXp-int {vertical-align: -.2em}
+.MJXp-math {display: inline-block; line-height: 1.2; text-indent: 0; font-family: 'Times New Roman',Times,STIXGeneral,serif; white-space: nowrap; border-collapse: collapse}
+.MJXp-display {display: block; text-align: center; margin: 1em 0}
+.MJXp-math span {display: inline-block}
+.MJXp-box {display: block!important; text-align: center}
+.MJXp-box:after {content: " "}
+.MJXp-rule {display: block!important; margin-top: .1em}
+.MJXp-char {display: block!important}
+.MJXp-mo {margin: 0 .15em}
+.MJXp-mfrac {margin: 0 .125em; vertical-align: .25em}
+.MJXp-denom {display: inline-table!important; width: 100%}
+.MJXp-denom > * {display: table-row!important}
+.MJXp-surd {vertical-align: top}
+.MJXp-surd > * {display: block!important}
+.MJXp-script-box > *  {display: table!important; height: 50%}
+.MJXp-script-box > * > * {display: table-cell!important; vertical-align: top}
+.MJXp-script-box > *:last-child > * {vertical-align: bottom}
+.MJXp-script-box > * > * > * {display: block!important}
+.MJXp-mphantom {visibility: hidden}
+.MJXp-munderover {display: inline-table!important}
+.MJXp-over {display: inline-block!important; text-align: center}
+.MJXp-over > * {display: block!important}
+.MJXp-munderover > * {display: table-row!important}
+.MJXp-mtable {vertical-align: .25em; margin: 0 .125em}
+.MJXp-mtable > * {display: inline-table!important; vertical-align: middle}
+.MJXp-mtr {display: table-row!important}
+.MJXp-mtd {display: table-cell!important; text-align: center; padding: .5em 0 0 .5em}
+.MJXp-mtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-mlabeledtr {display: table-row!important}
+.MJXp-mlabeledtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mlabeledtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+.MJXp-scale0 {-webkit-transform: scaleX(.0); -moz-transform: scaleX(.0); -ms-transform: scaleX(.0); -o-transform: scaleX(.0); transform: scaleX(.0)}
+.MJXp-scale1 {-webkit-transform: scaleX(.1); -moz-transform: scaleX(.1); -ms-transform: scaleX(.1); -o-transform: scaleX(.1); transform: scaleX(.1)}
+.MJXp-scale2 {-webkit-transform: scaleX(.2); -moz-transform: scaleX(.2); -ms-transform: scaleX(.2); -o-transform: scaleX(.2); transform: scaleX(.2)}
+.MJXp-scale3 {-webkit-transform: scaleX(.3); -moz-transform: scaleX(.3); -ms-transform: scaleX(.3); -o-transform: scaleX(.3); transform: scaleX(.3)}
+.MJXp-scale4 {-webkit-transform: scaleX(.4); -moz-transform: scaleX(.4); -ms-transform: scaleX(.4); -o-transform: scaleX(.4); transform: scaleX(.4)}
+.MJXp-scale5 {-webkit-transform: scaleX(.5); -moz-transform: scaleX(.5); -ms-transform: scaleX(.5); -o-transform: scaleX(.5); transform: scaleX(.5)}
+.MJXp-scale6 {-webkit-transform: scaleX(.6); -moz-transform: scaleX(.6); -ms-transform: scaleX(.6); -o-transform: scaleX(.6); transform: scaleX(.6)}
+.MJXp-scale7 {-webkit-transform: scaleX(.7); -moz-transform: scaleX(.7); -ms-transform: scaleX(.7); -o-transform: scaleX(.7); transform: scaleX(.7)}
+.MJXp-scale8 {-webkit-transform: scaleX(.8); -moz-transform: scaleX(.8); -ms-transform: scaleX(.8); -o-transform: scaleX(.8); transform: scaleX(.8)}
+.MJXp-scale9 {-webkit-transform: scaleX(.9); -moz-transform: scaleX(.9); -ms-transform: scaleX(.9); -o-transform: scaleX(.9); transform: scaleX(.9)}
+.MathJax_PHTML .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+</style></head>
+  <body><div id="MathJax_Message" style="display: none;"></div>
+
+    <header class="master-header ng-scope" ng-controller="HeaderController">
+  <div class="ui transparent inverted main menu page grid">
+    <div class="middle aligned column header-container">
+      <!-- Left -->
+      <!-- Logo -->
+      <p class="logo item">
+        <a href="https://kipalog.com/">
+          <img class="ui image" src="./File Properties_files/logo-089ee7649acd5dd69ceb7c9dddece3bf.png">
+</a>      </p>
+      <!-- Search filed -->
+      <form id="search-form" class="ui search item ng-pristine ng-valid" method="GET" action="https://kipalog.com/search">
+        <div class="ui icon input">
+          <input id="search-field" name="q" class="focus-popup" type="text" placeholder="Tìm kiếm" autocomplete="off" data-content="&lt;span&gt;Nhập từ và &lt;/span&gt;&lt;div class=&#39;enter-button&#39;&gt;&lt;span&gt;enter &lt;/span&gt;&lt;i class=&#39;clockwise rotated level down icon&#39;&gt;&lt;/i&gt;&lt;/div&gt;&lt;span&gt; để bắt đầu tìm kiếm&lt;/span&gt;" data-position="bottom center" data-offset="7">
+        </div>
+      </form>
+
+      <!-- JS variable of logged-in or guest -->
+      <input type="hidden" ng-init="userLoggedIn=false">
+
+      <!-- Logged in header -->
+      <!-- Anonymous header -->
+        <div class="right menu">
+          <!-- Signin btn -->
+          <div class="anonymous item btn">
+            <a class="ui basic inverted button" href="https://kipalog.com/users/sign_in#login">
+              <i class="sign in icon"></i>
+              Đăng nhập
+</a>          </div>
+          <!-- Signup btn -->
+          <div class="anonymous item btn">
+            <a class="ui green button" href="https://kipalog.com/">
+              <i class="user icon"></i>
+              Đăng ký
+</a>          </div>
+        </div>
+    </div>
+  </div>
+</header>
+
+    <div class="ui small confirm modal" id="semanticAlert">
+  <i class="close icon"></i>
+  <div class="header">
+    Chú ý
+  </div>
+  <div class="content">
+    <div class="left">
+      <i class="orange warning icon"></i>
+    </div>
+    <div class="right">
+      <p class="message">
+      </p>
+    </div>
+  </div>
+  <div class="actions">
+    <div class="ui circular orange button">
+      Ok
+    </div>
+  </div>
+</div>
+
+    <main class="master-body" scrollable-to-top="" data-target=".scroll-top">
+      <!-- Facebook SDK -->
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '1403286366560425',
+      xfbml      : true,
+      version    : 'v2.3'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+
+<script type="text/javascript" src="./File Properties_files/MathJax.js.download">
+</script>
+<script type="text/x-mathjax-config;executed=true">
+  MathJax.Hub.Config({
+    skipStartupTypeset: true,
+    showProcessingMessages: false,
+    tex2jax: {
+      inlineMath: [['$','$'],['\\(','\\)']]
+    }
+  });
+</script>
+
+<!--post delete modal confirmation-->
+<div class="ui small confirm modal" id="postDelete">
+  <i class="close icon"></i>
+  <div class="header">
+    Xóa bài viết
+  </div>
+  <div class="content">
+    <div class="left">
+      <i class="trash icon"></i>
+    </div>
+    <div class="right">
+      <p>
+        Bạn có chắc chắn muốn xóa bài viết này không ?
+      </p>
+    </div>
+  </div>
+  <div class="actions">
+    <div class="ui circular black button">
+      Không
+    </div>
+    <div class="ui circular positive button">
+      Có
+    </div>
+  </div>
+</div>
+
+<div class="ui small confirm modal" id="commentDelete">
+  <i class="close icon"></i>
+  <div class="header">
+    Xóa bình luận
+  </div>
+  <div class="content">
+    <div class="left">
+      <i class="trash icon"></i>
+    </div>
+    <div class="right">
+      <p>
+        Bạn có chắc chắn muốn xóa bình luận này không ?
+      </p>
+    </div>
+  </div>
+  <div class="actions">
+    <div class="ui circular black button">
+      Không
+    </div>
+    <div class="ui circular positive button">
+      Có
+    </div>
+  </div>
+</div>
+
+<!-- Join Modal-->
+<div class="ui signin modal join-modal" id="login-modal">
+  <i class="close icon"></i>
+  <div class="ui center aligned teal header pc">
+    Chào bạn! Hãy đăng ký hoặc đăng nhập để tiếp tục nhé!
+  </div>
+  <span class="ui center aligned teal header smartphone">
+    Kipalog
+  </span>
+
+  <div class="content">
+
+    <div class="ui two column middle aligned grid basic segment">
+      <div class="equal height row">
+        <!-- Login column -->
+        <div class="column">
+          <!-- SignIn form - place Sign In URL here -->
+          <form accept-charset="UTF-8" action="https://kipalog.com/users/sign_in" class="ui form segment ng-pristine ng-valid" id="new_user" method="post"><div style="display:none"><input name="utf8" type="hidden" value="✓"><input name="authenticity_token" type="hidden" value="UqIEowEDWnJ5aDllZNmPi66JEbmquklgTg7jIm3leLs="></div>
+            <input id="from" name="from" type="hidden" value="home">
+            <div class="field">
+              <!-- Place Sign Up URL here -->
+              <input type="hidden" id="signUpURL" value="/users">
+            </div>
+            <div class="field">
+              <div class="ui left labeled icon input">
+                <input autofocus="autofocus" id="user_email" name="user[email]" placeholder="Email" type="email" value="">
+                <i class="mail icon"></i>
+              </div>
+            </div>
+            <div class="field">
+              <div class="ui left labeled icon input">
+                <input autocomplete="off" id="user_password" name="user[password]" placeholder="Password" type="password">
+                <i class="lock icon"></i>
+              </div>
+            </div>
+            <div class="two fluid ui buttons">
+              <input class="ui teal submit button" type="submit" id="signin" value="Đăng nhập">
+              <div class="or"></div>
+              <input class="ui orange button signup-kick" type="submit" id="signup" value="Đăng ký" data-target=".ui.form" data-endpoint="#signUpURL">
+            </div>
+</form>        <!-- Divider -->
+        <div class="ui horizontal divider">
+          or
+        </div>
+        </div>
+        <!-- Divider -->
+        <div class="ui vertical divider">
+          or
+        </div>
+        <!-- Social column -->
+        <div class="center aligned column">
+          <!-- facebook -->
+          <a class="ui facebook button" href="https://kipalog.com/users/auth/facebook">
+            <i class="facebook icon"></i>
+            facebook
+</a>          <!-- twitter -->
+          <a class="ui twitter button" href="https://kipalog.com/users/auth/twitter">
+            <i class="twitter icon"></i>
+            twitter
+</a>          <!-- github-->
+          <a class="ui black button" href="https://kipalog.com/users/auth/github">
+            <i class="github icon"></i>
+            github
+</a>        </div>
+      </div>
+    </div>
+    <br>
+    <!-- Info message -->
+    <div class="ui message">
+      <p>
+        <i class="info icon"></i>
+        Bạn luôn có thể lựa chọn email hoặc các tài khoản mạng xã hội để đăng nhập hoặc đăng ký.
+      </p>
+    </div>
+    <br>
+  </div>
+</div>
+
+
+<div class="ui divided page grid ng-scope" ng-controller="PostController">
+  <div class="twelve wide column md-col">
+    <!-- Markdown header here -->
+    <h1 class="ui teal block fluid header">
+      <strong>File Properties</strong>
+      <div class="tag">
+            <a class="ui label" href="https://kipalog.com/tags/Java?count=71">
+              Java
+              <div class="detail">71</div>
+</a>        <!-- Published date -->
+        <div class="published">
+          <a class="ui small avatar image" href="https://kipalog.com/users/Hades/mypage">
+            <img class="lazy" src="./File Properties_files/male_avatar-f0133698a204bbc1684476efffe76f51.png">
+</a>          <p class="date">
+            Hades viết ngày 07/01/2017
+          </p>
+        </div>
+      </div>
+    </h1>
+
+    <!-- Markdown content here -->
+    <section id="content" class="ui pilled segment md" ng-non-bindable="">
+      <span id="toc-v-n-"></span><h1 class="ui dividing header">Vấn đề</h1>
+
+<p>Khi làm việc với CSDL hay networks.. . có những thông số thường xuyên thay đổi như tên CSDL, cổng, tài khoản, người dùng, mật khẩu.. .Nếu những thông tin này bạn viết sẵn trong code hệ thống thì có vấn đề đặt ra là nếu muốn thay đổi bạn phải mở file code lên và tìm đến file chúng ta đã cấu hình để thay đổi ? Làm như vậy phức tạp và khá lằng nhằng.</p>
+
+<span id="toc-h-ng-gi-i-quy-t"></span><h1 class="ui dividing header">Hướng giải quyết</h1>
+
+<p>Thay vì hardcode thì ta sẽ lưu thông tin cấu hình vào 1 file để có thể dễ dàng cho việc thay đổi các thông tin cấu hình. <br>
+Trong java cung cấp lớp <em>java.util.Properties</em> cung cấp một số phương thức :</p>
+
+<blockquote>
+<p><em>Nạp 1 cặp key/value vào đối tượng Properties từ luồng</em><br>
+<em>Lấy value từ key của nó</em><br>
+<em>Lấy ra danh sách key và value</em><br>
+<em>Lưu properties vào luồng</em></p>
+</blockquote>
+
+<span id="toc-c-u-tr-c-file-properties"></span><h1 class="ui dividing header">Cấu trúc file properties</h1>
+
+<p>File properties là 1 dạng file text, cách sử dụng rất đơn giản :<br>
+ <code>#your_comment</code> : với những dòng có ký tự “#” ở đầu dòng thì dòng đấy chính là chú thích của bạn, và khi sử dụng thì những dòng này sẽ được bỏ qua.<br>
+<code>key=value</code> : đây là 1 cặp giá trị “key” có giá trị là “value”</p>
+
+<p>Ví Dụ: <br>
+ #username dang nhap he thong<br>
+ username=test123<br>
+ code=16996</p>
+
+<p><strong>Chú ý :</strong> </p>
+
+<ul class="ui list">
+<li>key và value viết sát nhau bởi dấu =</li>
+<li>Key không được chứa khoảng trắng</li>
+<li>Value có thể chứa khoảng trắng</li>
+</ul>
+
+<span id="toc-demo"></span><h1 class="ui dividing header">Demo</h1>
+
+<pre><code class="ui segment hljs cs">package FileProperties;
+
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.util.Enumeration;
+import java.util.Properties;
+
+<span class="hljs-comment">/**
+ *
+ * @author Hades
+ */</span>
+<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title">PropertiesFile</span> {
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+        Properties props = <span class="hljs-keyword">new</span> Properties();
+        OutputStream outStream = <span class="hljs-keyword">null</span>;
+        InputStream inStream = <span class="hljs-keyword">null</span>;
+
+        writeToPropsFile(props,outStream);
+        loadPropsFile(props,inStream);
+        printEveryThing(props,inStream);
+
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">writeToPropsFile</span><span class="hljs-params">(Properties props, OutputStream outStream)</span> </span>{
+        <span class="hljs-keyword">try</span> {
+            outStream = <span class="hljs-keyword">new</span> FileOutputStream(<span class="hljs-string">"config.properties"</span>);
+             <span class="hljs-comment">// Note :Nếu đường dẫn file không được xác định, tập tin sẽ được lưu trong thư mục gốc của project</span>
+
+            props.setProperty(<span class="hljs-string">"port"</span>,<span class="hljs-string">"8983"</span>);
+            props.setProperty(<span class="hljs-string">"user"</span>,<span class="hljs-string">"admin"</span>);
+            props.setProperty(<span class="hljs-string">"pass"</span>,<span class="hljs-string">"admin"</span>);
+
+            props.store(outStream,<span class="hljs-keyword">null</span>);
+        } 
+        <span class="hljs-keyword">catch</span> (Exception e) {
+            System.<span class="hljs-keyword">out</span>.println(e.getCause());
+        }
+        <span class="hljs-keyword">finally</span> {
+            <span class="hljs-keyword">if</span>(outStream != <span class="hljs-keyword">null</span>) {
+                <span class="hljs-keyword">try</span> {
+                    outStream.close();
+                }
+                <span class="hljs-keyword">catch</span> (Exception e) {
+                    System.<span class="hljs-keyword">out</span>.println(e.getCause());
+                }
+            }
+        }
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">loadPropsFile</span><span class="hljs-params">(Properties props, InputStream inStream)</span> </span>{
+        <span class="hljs-keyword">try</span> {
+            inStream = <span class="hljs-keyword">new</span> FileInputStream(<span class="hljs-string">"config.properties"</span>);
+
+            props.load(inStream);
+            System.<span class="hljs-keyword">out</span>.println(props.<span class="hljs-keyword">get</span>(<span class="hljs-string">"port"</span>));
+            System.<span class="hljs-keyword">out</span>.println(props.<span class="hljs-keyword">get</span>(<span class="hljs-string">"user"</span>));
+            System.<span class="hljs-keyword">out</span>.println(props.<span class="hljs-keyword">get</span>(<span class="hljs-string">"pass"</span>));
+
+        } 
+        <span class="hljs-keyword">catch</span> (Exception e) {
+            System.<span class="hljs-keyword">out</span>.println(e.getCause());
+        }
+        <span class="hljs-keyword">finally</span> {
+            <span class="hljs-keyword">if</span>(inStream != <span class="hljs-keyword">null</span>) {
+                <span class="hljs-keyword">try</span> {
+                    inStream.close();
+                } 
+                <span class="hljs-keyword">catch</span> (IOException ex) {
+                    System.<span class="hljs-keyword">out</span>.println(ex.getCause());
+                }
+            }
+        }
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">printEveryThing</span><span class="hljs-params">(Properties props, InputStream inStream)</span> </span>{
+        <span class="hljs-keyword">try</span> {
+            inStream = <span class="hljs-keyword">new</span> FileInputStream(<span class="hljs-string">"config.properties"</span>);
+            props.load(inStream);
+            Enumeration&lt;?&gt; e = props.propertyNames();
+            <span class="hljs-keyword">while</span>(e.hasMoreElements()) {
+                String key = (String) e.nextElement();
+                String <span class="hljs-keyword">value</span> = props.getProperty(key);
+                System.<span class="hljs-keyword">out</span>.println(<span class="hljs-string">"KEY: "</span> + key + <span class="hljs-string">" - "</span> + <span class="hljs-string">"VALUE: "</span>+<span class="hljs-keyword">value</span>);
+            }
+        } 
+        <span class="hljs-keyword">catch</span> (IOException ex) {
+            System.<span class="hljs-keyword">out</span>.println(ex.getCause());
+        }
+    }
+}
+</code></pre>
+
+<p>Run lần lượt từng method kết quả trả về :</p>
+
+<p><code>config.properties</code></p>
+
+<blockquote>
+<p>#Sat Jan 07 23:22:03 ICT 2017<br>
+user=admin<br>
+port=8983<br>
+pass=admin</p>
+</blockquote>
+
+<p><code>output</code></p>
+
+<blockquote>
+<p>8983<br>
+admin<br>
+admin</p>
+</blockquote>
+
+<p><code>output</code></p>
+
+<blockquote>
+<p>KEY: user - VALUE: admin<br>
+KEY: port - VALUE: 8983<br>
+KEY: pass - VALUE: admin</p>
+</blockquote>
+
+    </section>
+    <!-- Markdown end here -->
+
+    <!-- Social share -->
+    <div class="meta-social-share ng-scope" ng-controller="SocialController">
+      <div class="hidden-meta">
+        <input type="hidden" id="share-url" value="http://kipalog.com/posts/File-Properties">
+        <input type="hidden" id="share-content" value="File Properties">
+      </div>
+      <div class="suggest-title">
+        <i class="small forward mail icon"></i>
+        Chia sẻ bài viết với bạn bè nữa nhé!
+      </div>
+      <a class="ui icon small facebook button" ng-click="shareFacebook()">
+        <i class="facebook icon"></i>
+        <span>
+          facebook
+        </span>
+      </a>
+      <a class="ui icon small google plus button" ng-click="share(&#39;gg&#39;)">
+        <i class="google plus icon"></i>
+        <span>
+          google plus
+        </span>
+      </a>
+      <a class="ui icon small twitter button" ng-click="share(&#39;tw&#39;)">
+        <i class="twitter icon"></i>
+        <span>
+          twitter
+        </span>
+      </a>
+    </div>
+
+    <!-- Meta -->
+    <div class="hidden-meta">
+      <input type="hidden" ng-init="like_endpoint=&#39;/likes&#39;">
+      <input type="hidden" ng-init="unlike_endpoint=&#39;/likes/nibls2SaAsLhDmGfnbI4iA&#39;">
+      <input type="hidden" ng-init="follow_endpoint=&#39;/users/follow&#39;">
+      <input type="hidden" ng-init="unfollow_endpoint=&#39;/users/unfollow&#39;">
+      <input type="hidden" ng-init="postId=&#39;nibls2SaAsLhDmGfnbI4iA&#39;">
+      <input type="hidden" ng-init="other_id=&#39;Y7wiA8dm_71QHxC5BbkCrQ&#39;">
+      <input type="hidden" ng-init="like_count=2">
+      <input type="hidden" ng-init="liked=false">
+      <input type="hidden" ng-init="followerCount=16">
+      <input type="hidden" ng-init="userFollowed=false">
+      <input type="hidden" ng-init="userLoggedIn=false">
+      <input type="hidden" ng-init="mentionable_path=&#39;/users/mentionable&#39;">
+    </div>
+
+    <!-- Comments -->
+    <div id="cmts" class="ui threaded comments segment ng-scope" ng-controller="CommentController">
+      <div class="ui huge ribbon label">
+        Bình luận
+      </div>
+      <br><br>
+      <!-- ngRepeat: comment in comments -->
+
+      <!-- My comment -->
+      <div class="comment" id="my-comment">
+        <div class="hidden-meta">
+          <input type="hidden" ng-init="isCmtsPreviewing=false">
+          <input type="hidden" ng-init="isCmtsAreaFocused=false">
+        </div>
+        <a class="avatar">
+          <img class="lazy" src="./File Properties_files/male_avatar-f0133698a204bbc1684476efffe76f51.png">
+        </a>
+        <form accept-charset="UTF-8" action="https://kipalog.com/posts/File-Properties/comments" class="content ng-pristine ng-valid" id="new_comment" method="post" ng-submit="send_comment($event)"><div style="display:none"><input name="utf8" type="hidden" value="✓"><input name="authenticity_token" type="hidden" value="UqIEowEDWnJ5aDllZNmPi66JEbmquklgTg7jIm3leLs="></div>
+          <!-- ngIf: comment_error -->
+          <i class="large smile icon cmts-emoji"></i>
+          <textarea class="cmts-area ng-pristine ng-untouched ng-valid" id="my-cmts" name="comment[content]" ng-model="content" ng-show="!isCmtsPreviewing" placeholder="Đăng nhập để bình luận :)" spellcheck="false" style="overflow: hidden; word-wrap: break-word; height: 46.8px;"></textarea>
+          <div class="ui raised segment cmts-show ng-hide" ng-show="isCmtsPreviewing"></div>
+          <div class="equal height row cmts-action ng-hide" ng-show="isCmtsAreaFocused">
+            <input type="submit" value="Gửi" class="ui mini button green submit cmts-reset" data-area=".cmts-area">
+            <div class="ui mini button cmts-reset" data-area=".cmts-area">Hủy</div>
+            &nbsp;&nbsp;&nbsp;
+            <div class="ui text shape cmts-pv">
+              <div class="sides">
+                <p class="side pv show-preview active" ng-class="{&#39;active&#39;:!isCmtsPreviewing}" data-shape=".ui.text.shape" data-area=".cmts-area" data-show=".cmts-show">Hiển thị thử</p>
+                <p class="side pv hide-pv" ng-class="{&#39;active&#39;:isCmtsPreviewing}" data-shape=".ui.text.shape" data-area=".cmts-area" data-show=".cmts-show">Chỉnh sửa</p>
+              </div>
+            </div>
+          </div>
+</form>      </div>
+    </div>
+
+    <!-- Smartphone area -->
+    <div class="ui center aligned basic segment smartphone-area">
+      <a class="ui bigger avatar image" href="https://kipalog.com/users/Hades/mypage">
+        <img class="lazy" src="./File Properties_files/male_avatar-f0133698a204bbc1684476efffe76f51.png">
+</a>      <a class="author-name" href="https://kipalog.com/users/Hades/mypage">
+        <h3 class="ui header caption">
+          Hades
+        </h3>
+</a>      <div class="ui two column grid segment">
+        <!-- Info -->
+        <div class="equal height row">
+          <div class="right aligned column">
+            <a href="https://kipalog.com/users/Hades/mypage">5</a>
+            bài viết.
+          </div>
+          <div class="left aligned column">
+            <a href="https://kipalog.com/users/Hades/mypage">16</a>
+            người follow
+          </div>
+        </div>
+        <!-- Button -->
+        <div class="equal height row action-btn">
+          <div class="right aligned column">
+            <div class="ui circular toggle basic button" id="smart-like-button" ng-class="{&#39;active&#39;:liked}" ng-click="like()">
+              <i class="icon empty bookmark" ng-class="liked ? &#39;checkmark&#39; : &#39;empty bookmark&#39; "></i>
+              <span>Kipalog</span>
+            </div>
+          </div>
+          <div class="left aligned column ng-scope" ng-controller="UserFollowController">
+            <div class="ui circular toggle basic button" ng-class="{&#39;active&#39;:userFollowed}" id="smart-follow-button" ng-click="followUser();">
+              <i class="rss icon teal outline" ng-class="{&#39;teal outline&#39;:!userFollowed}"></i>
+              <span class="ng-binding">Follow</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Suggest posts list -->
+    <div class="suggest posts list">
+
+      <!-- Same author posts -->
+      <div class="ui huge ribbon label">
+        Cùng một tác giả
+      </div>
+      <div class="ui massive list feed-list">
+        <div class="item">
+          <img class="ui avatar image lazy" src="./File Properties_files/male_avatar-f0133698a204bbc1684476efffe76f51.png">
+          <div class="right floated feed-date">
+            9
+            <i class="bookmark icon"></i>
+            12
+            <i class="comment icon"></i>
+          </div>
+          <div class="content">
+            <div class="header">
+              <a href="https://kipalog.com/posts/ANDROID--Cach-to-chuc-thu-muc-cho-project">[ANDROID] Cách tổ chức thư mục cho project</a>
+              <div class="tag">
+              </div>
+            </div>
+            <div class="detail">
+              Dưới đây là một cách tổ chức thư mục mà mình cho là khá hợp lý. Hi vọng mọi người có thể tham khảo và góp ý :smile:  Android_structure  ├─ com.abc ...
+            </div>
+            <div class="meta">
+              <a href="https://kipalog.com/users/Hades/mypage">
+                Hades
+              </a>
+              viết
+              hơn 1 năm
+              trước
+            </div>
+            <div class="smart-meta">
+              9
+              <i class="bookmark icon"></i>
+              12
+              <i class="comment icon"></i>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img class="ui avatar image lazy" src="./File Properties_files/male_avatar-f0133698a204bbc1684476efffe76f51.png">
+          <div class="right floated feed-date">
+            5
+            <i class="bookmark icon"></i>
+            2
+            <i class="comment icon"></i>
+          </div>
+          <div class="content">
+            <div class="header">
+              <a href="https://kipalog.com/posts/String-xml-trong-Android">String.xml trong Android</a>
+              <div class="tag">
+                <a href="https://kipalog.com/tags/android" class="ui label">
+                  android
+                </a>
+                <a href="https://kipalog.com/tags/String.xml" class="ui label">
+                  String.xml
+                </a>
+              </div>
+            </div>
+            <div class="detail">
+              Những điều cần nhớ  Hades 22042017   Đừng dùng lại  Đừng sử dụng lại strings cho nhiều màn hình khác nhau.  1. Tưởng tượng rằng bạn có một hộp thoạ...
+            </div>
+            <div class="meta">
+              <a href="https://kipalog.com/users/Hades/mypage">
+                Hades
+              </a>
+              viết
+              1 năm
+              trước
+            </div>
+            <div class="smart-meta">
+              5
+              <i class="bookmark icon"></i>
+              2
+              <i class="comment icon"></i>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img class="ui avatar image lazy" src="./File Properties_files/male_avatar-f0133698a204bbc1684476efffe76f51.png">
+          <div class="right floated feed-date">
+            4
+            <i class="bookmark icon"></i>
+            0
+            <i class="comment icon"></i>
+          </div>
+          <div class="content">
+            <div class="header">
+              <a href="https://kipalog.com/posts/Su-dung-RecyclerView">Sử dụng RecyclerView</a>
+              <div class="tag">
+                <a href="https://kipalog.com/tags/android" class="ui label">
+                  android
+                </a>
+                <a href="https://kipalog.com/tags/RecycleView" class="ui label">
+                  RecycleView
+                </a>
+              </div>
+            </div>
+            <div class="detail">
+              Giới thiệu  RecycleView là một viewGroup mới được giới thiệu trong Android L ( API 21 ). Đây là một viewGroup có chức năng tương tự như ListView nh...
+            </div>
+            <div class="meta">
+              <a href="https://kipalog.com/users/Hades/mypage">
+                Hades
+              </a>
+              viết
+              hơn 1 năm
+              trước
+            </div>
+            <div class="smart-meta">
+              4
+              <i class="bookmark icon"></i>
+              0
+              <i class="comment icon"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Related posts -->
+      <div class="ui huge ribbon label">
+        Bài viết liên quan
+      </div>
+      <div class="ui massive list feed-list">
+        <div class="item">
+          <img class="ui avatar image lazy" src="./File Properties_files/logo5.png">
+          <div class="right floated feed-date">
+            0
+            <i class="bookmark icon"></i>
+            0
+            <i class="comment icon"></i>
+          </div>
+          <div class="content">
+            <div class="header">
+              <a href="https://kipalog.com/posts/Cac-thanh-phan-co-ban-cua-Liferay--Phan-2">Các thành phần cơ bản của Liferay (Phần 2)</a>
+              <div class="tag">
+                <a href="https://kipalog.com/tags/Java" class="ui label">
+                  Java
+                </a>
+                <a href="https://kipalog.com/tags/liferay" class="ui label">
+                  liferay
+                </a>
+                <a href="https://kipalog.com/tags/CMS" class="ui label">
+                  CMS
+                </a>
+              </div>
+            </div>
+            <div class="detail">
+              Trong bài viết này, một số hình ảnh hoặc nọi dung có thể bị thiếu do quá trình chế bản. Vui lòng xem nội dung ở blog gốc sau: (Link)  (Link), chúng...
+            </div>
+            <div class="meta">
+              <a href="https://kipalog.com/users/programmerit/mypage">
+                programmerit
+              </a>
+              viết
+              gần 3 năm
+              trước
+            </div>
+            <div class="smart-meta">
+              0
+              <i class="bookmark icon"></i>
+              0
+              <i class="comment icon"></i>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img class="ui avatar image lazy" src="./File Properties_files/male_avatar-f0133698a204bbc1684476efffe76f51.png">
+          <div class="right floated feed-date">
+            9
+            <i class="bookmark icon"></i>
+            5
+            <i class="comment icon"></i>
+          </div>
+          <div class="content">
+            <div class="header">
+              <a href="https://kipalog.com/posts/Design-Patern----Facade-Patern">[Design Patern] - Facade Patern</a>
+              <div class="tag">
+                <a href="https://kipalog.com/tags/Java" class="ui label">
+                  Java
+                </a>
+                <a href="https://kipalog.com/tags/design%20pattern" class="ui label">
+                  design pattern
+                </a>
+              </div>
+            </div>
+            <div class="detail">
+              Facade Design Patern   Facade Patern thuộc vào họ mô hình cấu trúc (structural patern). Facade patern phát biểu rằng :   "just provide a unified an...
+            </div>
+            <div class="meta">
+              <a href="https://kipalog.com/users/DuongVanTien/mypage">
+                DuongVanTien
+              </a>
+              viết
+              hơn 1 năm
+              trước
+            </div>
+            <div class="smart-meta">
+              9
+              <i class="bookmark icon"></i>
+              5
+              <i class="comment icon"></i>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img class="ui avatar image lazy" src="./File Properties_files/logo5.png">
+          <div class="right floated feed-date">
+            0
+            <i class="bookmark icon"></i>
+            2
+            <i class="comment icon"></i>
+          </div>
+          <div class="content">
+            <div class="header">
+              <a href="https://kipalog.com/posts/Cai-dat-va-cau-hinh-Liferay--Tomcat">Cài đặt và cấu hình Liferay (Tomcat)</a>
+              <div class="tag">
+                <a href="https://kipalog.com/tags/Java" class="ui label">
+                  Java
+                </a>
+                <a href="https://kipalog.com/tags/liferay" class="ui label">
+                  liferay
+                </a>
+                <a href="https://kipalog.com/tags/jsp" class="ui label">
+                  jsp
+                </a>
+                <a href="https://kipalog.com/tags/tomcat" class="ui label">
+                  tomcat
+                </a>
+              </div>
+            </div>
+            <div class="detail">
+              (Link), mình đã nêu ra các phần mềm chính (portal, sdk và ide). Trong phần này, mình sẽ hướng dẫn cụ thể cài đặt môi trường máy chủ và môi trường l...
+            </div>
+            <div class="meta">
+              <a href="https://kipalog.com/users/programmerit/mypage">
+                programmerit
+              </a>
+              viết
+              gần 3 năm
+              trước
+            </div>
+            <div class="smart-meta">
+              0
+              <i class="bookmark icon"></i>
+              2
+              <i class="comment icon"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- From here is right column -->
+  <div class="four wide column meta-col">
+    <div class="sticky stick" ng-class="{stick:pinStick}" style="width: 249px; top: 0px; bottom: initial;">
+      <!-- Info -->
+      <div class="row meta-info">
+        <div class="ui two column middle aligned grid celled segment meta-info">
+          <div class="center aligned column">
+            <span>
+              <a href="https://kipalog.com/posts/File-Properties" class="ng-binding">2</a>
+            </span>
+            <p>kipalog</p>
+          </div>
+          <div class="center aligned column">
+            <span>
+              <a class="go-to-comments ng-binding" data-target="#cmts" href="https://kipalog.com/posts/File-Properties#">0</a>
+            </span>
+            <p>bình luận</p>
+          </div>
+        </div>
+      </div>
+      <!-- Like -->
+      <div class="row ui circular toggle teal basic fluid button" id="pc-like-button" ng-class="{&#39;active&#39;:liked}" ng-click="like()">
+        <i class="left aligned icon bookmark" ng-class="liked ? &#39;checkmark&#39; : &#39;bookmark&#39; "></i>
+        <span class="ng-binding">Kipalog</span>
+      </div>
+      <br><br>
+      <!-- Profile -->
+      <div class="row meta-profile item">
+        <a class="left floated ui bigger avatar image" href="https://kipalog.com/users/Hades/mypage">
+          <img class="lazy" src="./File Properties_files/male_avatar-f0133698a204bbc1684476efffe76f51.png">
+</a>        <div ng-controller="UserFollowController" class="ng-scope">
+          <div class="right floated ui mini circular toggle basic button" ng-class="{&#39;active&#39;:userFollowed}" id="pc-follow-button" ng-click="followUser();">
+            <i class="rss icon teal outline" ng-class="{&#39;teal outline&#39;:!userFollowed}"></i>
+            <span class="ng-binding">Follow</span>
+          </div>
+        </div>
+        <div class="info">
+          <div class="name">
+            <a href="https://kipalog.com/users/Hades/mypage">
+              <h3 class="ui header caption">
+              Hades
+              </h3>
+</a>          </div>
+          <div class="extra">
+            <a href="https://kipalog.com/users/Hades/mypage">5</a>
+            bài viết.
+            <br>
+            <a href="https://kipalog.com/users/Hades/mypage">16</a>
+            người follow
+          </div>
+        </div>
+      </div>
+      <!-- Table of content -->
+      <div class="row meta-toc">
+        <p class="toc-title">
+          <i class="green hand right icon"></i>
+          &nbsp;Đầu mục bài viết
+        </p>
+        <div id="toc" class="toc-fly"><ul class="ui link list"><li class="toc-h1 toc-active"><a href="https://kipalog.com/posts/File-Properties#toc-v-n-">Vấn đề</a></li><li class="toc-h1"><a href="https://kipalog.com/posts/File-Properties#toc-h-ng-gi-i-quy-t">Hướng giải quyết</a></li><li class="toc-h1"><a href="https://kipalog.com/posts/File-Properties#toc-c-u-tr-c-file-properties">Cấu trúc file properties</a></li><li class="toc-h1"><a href="https://kipalog.com/posts/File-Properties#toc-demo">Demo</a></li></ul></div>
+      </div>
+    </div>
+    <!-- Remind popup -->
+    <div class="anonymous-remind-block" ng-show="!userLoggedIn">
+      <div class="ui basic segment anonymous remind">
+        <p class="ui dividing header">
+        Vẫn còn nữa!
+          <span id="remind_dismiss" class="dismiss">x</span>
+        </p>
+        <p class="description">
+          Kipalog vẫn còn rất nhiều bài viết hay và chủ đề thú vị chờ bạn khám phá!
+        </p>
+        <a href="https://kipalog.com/" class="ui signup circular green button">
+          Khám phá
+        </a>
+        <a href="https://kipalog.com/users/sign_in" class="signin">
+          Đăng nhập
+        </a>
+      </div>
+    </div>
+    <!-- Remind popup -->
+  </div>
+</div>
+
+    </main>
+      <!-- Footer -->
+<footer class="master-footer ui page grid">
+  <div class="row">
+    <div class="column">
+      <div class="ui horizontal divider">
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="twelve wide main column">
+      <div class="links">
+        <a target="_blank" href="http://kipalog.com/tos">
+          Điều khoản
+        </a>
+        <a target="_blank" href="https://www.facebook.com/groups/1466126020344500/">
+          Phản hồi
+        </a>
+        <a target="_blank" href="https://github.com/Kipalog/Issue-tracker">
+          Yêu cầu
+        </a>
+        <a target="_blank" href="https://www.facebook.com/pages/Kipalog/486208978117754">
+          Fanpage
+        </a>
+      </div>
+    </div>
+    <div class="four wide right column">
+      <div class="copyright">
+        <span>
+          Copyright © 2017 Kipalog
+        </span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  
+
+<textarea tabindex="-1" class="autosizejs" id="autosizejs" style="position: absolute; top: -999px; left: 0px; right: auto; bottom: auto; border: 0px; padding: 0px; box-sizing: content-box; word-wrap: break-word; overflow: hidden; transition: none; height: 0px !important; min-height: 0px !important; font-family: monospace; font-size: 11.7px; font-weight: 400; font-style: normal; letter-spacing: 0px; text-transform: none; word-spacing: 0px; text-indent: 0px; white-space: pre-wrap; line-height: normal; width: 673.559px;"></textarea><div class="atwho-container"><div id="atwho-ground-my-cmts"><div class="atwho-view" id="at-view-58"><ul class="atwho-view-ul"></ul></div></div></div><div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div></div></div><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe name="fb_xdm_frame_https" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" id="fb_xdm_frame_https" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="./File Properties_files/mAiQUwlReIP.html" style="border: none;"></iframe></div></div></div></body></html>
